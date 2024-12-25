@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(../task2/img/landing.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    background-color: white;
+    padding: 10px;
+    height: calc(100vh - 40px);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.items{
+    display: flex;
+flex-direction: column;
+margin: 5px 0px;
+width: 100%;
+}
+input[type="text"],input[type="password"],input[type="email"],input[type="date"],select{
+    height: 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: solid rgb(114, 113, 113) 1px;
+    padding-left: 5px;
+}
+textarea{
+    width:calc(100% - 10px);
+    height: 120px;
+    margin: 10px 0px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: solid rgb(138, 136, 136) 1px;
+    padding-left: 5px;
+}
+input::placeholder{
+    text-transform: capitalize;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+select{
+    padding: 8px 5px;
+    text-transform: capitalize;
+    height: fit-content;
+
+}
+option{
+    text-transform: capitalize;
+}
+input[type="submit"]{
+    background-color: rgb(28, 237, 28);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+label{
+    margin-bottom: 4px;
+    font-size: 15px;
+    font-weight: bold;
+}

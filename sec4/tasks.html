@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 p {
+        width: 350px;
+        border: 1px solid black;
+      }
+      .box1 span {
+        width: 100px;
+        height: 40px;
+        background-color: greenyellow;
+        border: 5px black solid;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+      }
+      .box2 {
+        display: grid;
+        grid-template-areas:
+          "header header header header header header "
+          "col1 col2 col2 col2 col2 col3 "
+          "footer footer footer footer  footer  footer ";
+        grid-template-rows: 50px 100px 50px;
+        text-align: center;
+      }
+      header {
+        grid-area: header;
+        background-color: pink;
+      }
+      footer {
+        grid-area: footer;
+        background-color: pink;
+      }
+      header,
+      footer {
+        line-height: 50px;
+      }
+      .col1,
+      .col2,
+      .col3 {
+        line-height: 100px;
+      }
+      .col1 {
+        grid-area: col1;
+        background-color: tomato;
+      }
+      .col2 {
+        grid-area: col2;
+        background-color: orange;
+      }
+      .col3 {
+        grid-area: col3;
+        background-color: greenyellow;
+      }
+      .box3 {
+        display: grid;
+        grid-template-areas:
+          "one one one two three "
+          "four four four five six "
+          "para para para eight nine ";
+        grid-template-rows: 50px 50px 100px;
+        /* text-align: center; */
+        background-color: rgb(30, 209, 14);
+        margin: 10px 0px;
+        width: 500px;
+      }
+      .box3 div ,  .box3 p{
+        padding: 10px;
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box3 p {
+        margin: 0;
+    
+
+      }
+      .box4{
+        margin: 20px 0px ;
+      }
+      .box4 ul{
+       list-style: none;
+       margin: 0;
+       padding: 0;
+       display: flex;
+       gap: 10px;
+       background-color: aqua;
+       padding: 10px;
+
+      }
+      ul li{
+        padding: 10px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <p>
+        the box model works differently for inline elements for example, this
+        <span>span</span>element does not work as expected
+      </p>
+    </div>
+    <div class="box2">
+      <header>header</header>
+      <div class="col1">column1</div>
+      <div class="col2">column2</div>
+      <div class="col3">column3</div>
+      <footer>footer</footer>
+    </div>
+    <div class="box3">
+      <div class="one" style="grid-area: one">1</div>
+      <div class="two" style="grid-area: two">2</div>
+      <div class="three" style="grid-area: three">3</div>
+      <div class="four" style="grid-area: four">4</div>
+      <div class="five" style="grid-area: five">5</div>
+      <div class="six" style="grid-area: six">6</div>
+      <div class="eight" style="grid-area: eight">8</div>
+      <div class="nine" style="grid-area: nine">9</div>
+      <p style="grid-area: para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+        voluptates deleniti harum vel, nulla, expedita ratione sequi facilis
+        eligendi fugiat ut voluptatibus atque architecto voluptatum? Officiis,
+        labore ea. Deleniti, enim!
+      </p>
+    </div>
+    <div class="box4">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>gallery</li>
+            <li>blogs</li>
+            <li>contact</li>
+        </ul>
+    </div>
+  </body>
+</html>

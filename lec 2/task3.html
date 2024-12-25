@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        table,td{
+            border: 5px inset black;
+            border-collapse: collapse;
+            background-color: aqua;
+        }
+        th,td{
+            padding: 10px;
+
+        }
+        table{
+            /* width:500px; */
+            text-align: center;
+        }
+        .firstRow{
+            background-color: orange;
+        }
+        .lastRow{
+            background-color: tomato;
+        }
+        th[rowspan]{
+            color: white;
+            writing-mode: vertical-rl;
+            border-right: 5px inset black;
+        
+        }
+        td,th{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <table BORDERCOLOR="RED 1P">
+        <caption style="padding: 10px;font-weight:bold;text-transform:uppercase;letter-spacing: 5px;">table</caption>
+        <tr class="firstRow">
+            <th rowspan="3" style="width:30px;">name</th>
+            <th >age</th>
+            <th>b.n</th>
+        </tr>
+        <tr>
+
+            <td>20</td>
+            <td>40</td>
+        </tr>
+        <tr>
+
+            <td>20</td>
+            <td>50</td>
+        </tr>
+        <tr class="lastRow">
+            <td colspan="3">thanks for all</td>
+        </tr>
+    </table>
+</body>
+</html>

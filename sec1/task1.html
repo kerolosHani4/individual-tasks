@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf6f4;
+            color: #333;
+        }
+
+        .browser-bar {
+            display: flex;
+            align-items: center;
+            background-color: #fde0d7;
+            padding: 0.5rem;
+            border-bottom: 1px solid #e2d4cf;
+        }
+
+        .browser-bar .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .circle.red {
+            background-color: #ff605c;
+        }
+
+        .circle.yellow {
+            background-color: #ffbd44;
+        }
+
+        .circle.green {
+            background-color: #00ca4e;
+        }
+
+        .browser-bar span {
+            margin-left: 1rem;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+
+        p strong {
+            font-weight: bold;
+        }
+
+        p em {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="browser-bar">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+        <span>My web page</span>
+    </div>
+    <div class="content">
+        <h1>Hello, world!</h1>
+        <p>This is my first web page.</p>
+        <p>It contains a <strong>main heading</strong> and <em>paragraph</em>.</p>
+        <hr>
+        <div class="text-formatting">
+            <p>This is <strong>bold text</strong>.</p>
+            <p>This is <strong>strongly important text</strong>.</p>
+            <p>This is <em>italic text</em>.</p>
+            <p>This is <em>emphasized text</em>.</p>
+            <p>This is <span class="highlight">highlighted text</span>.</p>
+            <p>This is <span class="code">computer code</span>.</p>
+            <p>This is <small>smaller text</small>.</p>
+            <p>This is <sub>subscript</sub> and <sup>superscript</sup> text.</p>
+            <p>This is <del>deleted text</del>.</p>
+            <p>This is <ins>inserted text</ins>.</p>
+            <p>This is <b>bold text</b>.</p>
+        </div>
+        <hr>
+    </div>
+   
+</body>
+</html>

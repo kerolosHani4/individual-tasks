@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ol>li:first-child {
+            color: tomato;
+        }
+
+        ol>li:nth-child(2),
+        ol>li:nth-child(4) {
+            color: orange;
+        }
+
+        ol>li:nth-child(3) {
+            color: chartreuse;
+        }
+
+        ul {
+            color: blue;
+        }
+
+        ol>li:last-child {
+            color: deeppink;
+        }
+
+        dd {
+            color: blueviolet;
+        }
+
+        .box {
+            padding: 20px;
+        }
+
+        .task {
+            background-color: #f6f6f6;
+        }
+
+        #para {
+            color: purple;
+        }
+        #para span{
+            color: palevioletred;
+            font-weight: bold;
+        }
+        #para::first-letter{
+            color:peru;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <ol type="i">
+        <li>java</li>
+        <li>python</li>
+        <li>cpp</li>
+        <li>web
+            <ul type="square">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+            </ul>
+        </li>
+        <li>c#</li>
+    </ol>
+    <hr>
+    <dl>
+        <dt>html</dt>
+        <dd>hyper text markup language</dd>
+        <dt>css</dt>
+        <dd>cascading style sheet</dd>
+    </dl>
+    <hr>
+    <div class="box task">
+        <h1 style="text-transform: capitalize; color:coral;">welcome to web learning</h1>
+        <p id="para">
+            list of element <span>courses</span>
+        </p>
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+            <li>c++</li>
+            <li>java</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

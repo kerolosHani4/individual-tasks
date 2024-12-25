@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+            font-family: cursive;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+       
+        td[colspan] {
+            background-color: #e0f7fa;
+        }
+        td[rowspan] {
+            background-color: #ffcdd2;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th colspan="6">Main Header (Colspan)</th>
+    </tr>
+    <tr>
+        <td rowspan="3">Rowspan Cell 1</td>
+        <td>Row 1, Col 2</td>
+        <td>Row 1, Col 3</td>
+        <td colspan="2">Colspan for Row 1, Col 4 and 5</td>
+    </tr>
+    <tr>
+        <td>Row 2, Col 2</td>
+        <td colspan="3">Colspan for Row 2, Col 3, 4, and 5</td>
+    </tr>
+    <tr>
+        <td>Row 3, Col 2</td>
+        <td>Row 3, Col 3</td>
+        <td>Row 3, Col 4</td>
+        <td>Row 3, Col 5</td>
+    </tr>
+    <tr>
+        <td>Row 4, Col 1</td>
+        <td rowspan="2">Rowspan Cell 2</td>
+        <td>Row 4, Col 3</td>
+        <td>Row 4, Col 4</td>
+        <td>Row 4, Col 5</td>
+    </tr>
+    <tr>
+        <td>Row 5, Col 1</td>
+        <td colspan="3">Colspan for Row 5, Col 3, 4, and 5</td>
+    </tr>
+   
+    
+</table>
+
+</body>
+</html>

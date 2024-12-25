@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Registration Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .registration-form {
+            background-color: #d3f2b8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+
+        .registration-form fieldset {
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        .registration-form legend {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .registration-form label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .registration-form input,
+        .registration-form select,
+        .registration-form textarea,
+        .registration-form button {
+            width: 100%;
+            padding: 10px 0px 10px 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .registration-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .registration-form button:hover {
+            background-color: #45a049;
+        }
+
+        .item {
+            display: flex;
+
+        }
+
+        input[type="radio"] ,input[type="checkbox"]{
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="registration-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name..." required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email..." required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number..." pattern="[0-9]{10}" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter Address..." required></textarea>
+            <label>Gender:</label>
+
+            <div class="item">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male" style="display: inline;">Male</label>
+            </div>
+            <div class="item">
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female" style="display: inline;">Female</label>
+            </div>
+
+         
+
+            <label for="language">Languages:</label>
+            <select id="language" name="language" required>
+                <option value="">Select Language...</option>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+                <option value="arabic">Arabic</option>
+            </select>
+            <label for="hobbies">Hobbies:</label>
+
+            <div class="item">
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading" style="display: inline;">Reading</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                <label for="sports" style="display: inline;">Sports</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="music" name="hobbies" value="music">
+                <label for="music" style="display: inline;">Music</label>
+            </div>
+
+
+          
+           
+          
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

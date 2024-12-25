@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+    .box{
+        height: 500px;
+        width: 500px;
+        position: relative;
+      overflow: hidden;
+
+    }
+
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-color: red;
+      animation: move-and-color 8s linear infinite;
+      border-radius: 5px;
+
+    }
+
+    .boxCover{
+        background-color: rgba(128, 128, 128, 0.485);
+        padding: 20px;
+        border-radius: 5px;
+    }
+    @keyframes move-and-color {
+      0% {
+        top: 0;
+        left: 100%;
+        background-color: red;
+        transform: translateX(-100%);
+      }
+      25% {
+        top: 0;
+        left: 0;
+        background-color: blue;
+        transform: translatex(0);
+
+      }
+      50% {
+        top: 100%;
+        left: 0;
+        background-color: green;
+        transform: translateY(-100%);
+      }
+      75% {
+        top: 100%;
+        left: 100%;
+        background-color: yellow;
+        transform: translate(-100%, -100%);
+      }
+      100% {
+        top: 0;
+        left: 100%;
+        background-color: red;
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="boxCover">
+    <div class="box">
+        <div class="animated-box"></div>
+      </div>
+</div>
+</body>
+</html>

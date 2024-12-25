@@ -1,0 +1,39 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+button {
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: gold;
+width: 100%;
+}
+button:active{
+    scale: 0.95;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.myname {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    -webkit-border-radius: 0px 10px 0px 10px;
+    text-transform: capitalize;
+    font-family: cursive;
+    margin: 10px 0px;
+    flex-basis: calc((100%)/6);
+
+}
+.parant{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        input[type="text"]{
+            margin: 50px 10px 50px 0px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="inputField" placeholder="Type and press Enter" />
+
+    <script>
+
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+
+        for (let key in person) {
+
+            document.body.appendChild(document.createTextNode(`${key}: ${person[key]}`));
+            document.body.innerHTML += `<br>`
+        }
+
+        document.body.innerHTML += `<hr>`
+
+
+        const colors = ["red", "green", "blue"];
+
+        for (let color of colors) {
+            document.body.appendChild(document.createTextNode(color));
+            document.body.innerHTML += `<br>`
+        }
+
+        document.body.innerHTML += `<hr>`;
+
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        for (const number of numbers) {
+            document.write(`The number is ${number}<br><br>`);
+        }
+
+        function enter(event) {
+            if (event.key === 'Enter') 
+                window.alert('You pressed Enter!');
+            }
+
+        let inputField = document.getElementById('inputField');
+
+        inputField.addEventListener('keydown', enter);
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<body>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .circle {
+            background-color: transparent;
+            border-radius: 50%;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: gray gray gray tomato;
+            animation: rotate 2s linear infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+        }
+
+        .name {
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+            color: orange;
+            font-size: 40px;
+            font-family: cursive;
+            padding: 5px 10px;
+            /* transform: ; */
+            overflow: hidden;
+
+            transition: 0.5s color;
+
+        }
+
+        .bg {
+            position: absolute;
+            left: -100%;
+            bottom: 50%;
+            transform: translate(-50%, 50%);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: aquamarine;
+            transform: translate(-50%, 50%) skewY(-5deg) rotate(30deg);
+            opacity: 0;
+            transition: 0.5s;
+            border-radius: 10px 5px;
+        }
+
+        .name:hover .bg {
+            animation: opac 0.5s forwards linear;
+            left: 50%;
+        }
+
+        .anmi {
+            position: relative;
+            width: 220px;
+            height: 220px;
+            margin: 40px 0px;
+
+        }
+
+        .name:hover {
+            color: black;
+            transition: 0.5s color;
+
+
+        }
+
+        @keyframes opac {
+            10% {
+                opacity: 0.1;
+            }
+
+            20% {
+                opacity: 0.2;
+            }
+
+            30% {
+                opacity: 0.3;
+            }
+
+            40% {
+                opacity: 0.4;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            60% {
+                opacity: 0.6;
+            }
+
+            70% {
+                opacity: 0.7;
+            }
+
+            80% {
+                opacity: 0.8;
+            }
+
+            90% {
+                opacity: 0.9;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+        .loading .item{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        .loading{
+            display:  flex;
+            gap: 10px;
+        }
+        
+    </style>
+</body>
+</head>
+
+<body>
+    <div class="anmi">
+        <div class="circle">
+
+        </div>
+        <div class="name">
+            kero
+            <div class="bg">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="loading">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>
